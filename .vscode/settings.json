@@ -1,0 +1,12 @@
+{
+    "python.formatting.provider": "black",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "sqlite",
+            "database": "${workspaceFolder:flask-studies}/instance/flaskr.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}

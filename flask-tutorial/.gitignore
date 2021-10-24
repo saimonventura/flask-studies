@@ -1,0 +1,8 @@
+venv
+instance/flaskr.sqlite
+build
+dist
+instance
+.pytest_cache
+htmlcov
+*.DS_Store

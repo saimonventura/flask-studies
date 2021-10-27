@@ -2,3 +2,8 @@
 	path = udemy-tutorial
 	url = https://github.com/tecladocode/python-refresher
 	branch = master
+
+[submodule "rest-apis-flask-python"]
+	path = rest-apis-flask-python
+	url = https://github.com/tecladocode/rest-apis-flask-python.git
+	branch = master

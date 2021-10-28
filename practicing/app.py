@@ -4,6 +4,7 @@ from flask_jwt import JWT
 
 from security import authenticate, identity
 from resources.user import UserRegister
+from resources.category import Category, CategoryList
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
@@ -20,6 +21,8 @@ def create_tables():
 
 jwt = JWT(app, authenticate, identity)  # /auth
 
+api.add_resource(Category, '/category/<string:name>')
+api.add_resource(CategoryList, '/category')
 api.add_resource(UserRegister, '/register')
 
 if __name__ == '__main__':

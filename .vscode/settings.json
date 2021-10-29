@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "pratice-db",
+            "database": "${workspaceFolder:flask-studies}/practicing/data.db"
+        }
+    ]
+}

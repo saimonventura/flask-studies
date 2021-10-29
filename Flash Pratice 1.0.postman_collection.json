@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "fa64ceb9-679b-4557-ac30-7c005b9d9bfa",
+		"name": "Flash Pratice 1.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"saimon\",\n    \"password\": \"Change#123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/register",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"saimon\",\n    \"password\": \"Change#123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/register",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "CREATED",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.0.2 Python/3.8.9"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Oct 2021 09:46:10 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User created successfully.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "/auth",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"saimon\",\n    \"password\": \"Change#123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/auth",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "/auth",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"saimon\",\n    \"password\": \"Change#123\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.0.2 Python/3.8.9"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Oct 2021 10:05:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"access_token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2MzU0MTU4NDQsImlhdCI6MTYzNTQxNTU0NCwibmJmIjoxNjM1NDE1NTQ0LCJpZGVudGl0eSI6MX0.4t6yVMF7SDmn2DRgiRNCMRroA4q88Tc97_7DjfTIYLQ\"\n}"
+						},
+						{
+							"name": "(401) - /auth",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"saimon\",\n    \"password\": \"Change#1232\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/auth",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "UNAUTHORIZED",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Content-Length",
+									"value": "93"
+								},
+								{
+									"key": "Server",
+									"value": "Werkzeug/2.0.2 Python/3.8.9"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 28 Oct 2021 10:10:27 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"description\": \"Invalid credentials\",\n    \"error\": \"Bad Request\",\n    \"status_code\": 401\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
